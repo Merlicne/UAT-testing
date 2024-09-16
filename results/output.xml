@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.4 on win32)" generated="2024-09-16T21:39:07.685721" rpa="false" schemaversion="5">
+<suite id="s1" name="UAT" source="D:\somethingIdroppedin\SQA\UAT">
+<suite id="s1-s1" name="UAT-LAB11-002" source="D:\somethingIdroppedin\SQA\UAT\UAT-LAB11-002.robot">
+<test id="s1-s1-t1" name="Empty First Name" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-16T21:39:08.194178" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-16T21:39:08.193178" elapsed="4.146347"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-16T21:39:12.340540" elapsed="0.105724"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-09-16T21:39:12.465582" level="INFO">Page title is 'Event Registration'.</msg>
+<arg>Event Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-09-16T21:39:12.447263" elapsed="0.018319"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-16T21:39:12.467934" level="INFO">Typing text 'Sodsai' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>${LAST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-16T21:39:12.466927" elapsed="0.192239"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-16T21:39:12.660168" level="INFO">Typing text 'CS KKU' into text field 'id=organization'.</msg>
+<arg>id=organization</arg>
+<arg>${ORGANIZATION}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-16T21:39:12.659166" elapsed="0.093707"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-16T21:39:12.754873" level="INFO">Typing text 'somsri@kkumail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-16T21:39:12.753876" elapsed="0.158651"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-16T21:39:12.913527" level="INFO">Typing text '081-001-1234' into text field 'id=phone'.</msg>
+<arg>id=phone</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-16T21:39:12.912527" elapsed="0.130108"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-16T21:39:13.045659" level="INFO">Clicking button 'id=registerButton'.</msg>
+<arg>id=registerButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-16T21:39:13.044609" elapsed="0.138618"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-16T21:39:13.203806" level="INFO">Current page contains text 'Please enter your first name!!'.</msg>
+<arg>Please enter your first name!!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-16T21:39:13.183227" elapsed="0.020579"/>
+</kw>
+<status status="PASS" start="2024-09-16T21:39:08.191179" elapsed="5.013627"/>
+</test>
+<status status="PASS" start="2024-09-16T21:39:07.739828" elapsed="5.466980"/>
+</suite>
+<status status="PASS" start="2024-09-16T21:39:07.694718" elapsed="5.515089"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="UAT">UAT</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="UAT-LAB11-002">UAT.UAT-LAB11-002</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
